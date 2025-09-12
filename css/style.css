@@ -1,3 +1,36 @@
 .headings {
   text-align: center;
+  color: yellow;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+body {
+  background-color: rgb(5, 31, 107);
+}
+.game-container {
+  text-align: center;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  margin: 25px;
+  border: 7px solid white;
+}
+.btn1 {
+  background-color: red;
+}
+
+.btn2 {
+  background-color: yellow;
+}
+.btn3 {
+  background-color: green;
+}
+
+.btn4 {
+  background-color: rgb(182, 7, 213);
 }
