@@ -1,6 +1,27 @@
-// Game Pattern Generator
-var color = ["red", "brown", "green", "purple"];
-var ranNum = Math.floor(Math.random() * 3);
+var color = ['red' , 'brown' , 'green' , 'purple'];
 var gamePattern = [];
-gamePattern.push(color[ranNum]);
-console.log(gamePattern);
+var gamestatus = false;
+function nextSeq()
+{
+    var randomNumber = Math.floor(Math.random()*4);
+    var randomColor =  color[randomNumber];
+    gamePattern.push(randomColor);
+    showPattern(randomColor);
+    btn1Audio.play();
+
+}
+
+var btn1Audio = new Audio("./sounds/red.mp3");
+
+function showPattern(randomColor)
+{
+    $("#"+randomColor).fadeOut(100).fadeIn(100);
+}
+
+$("body").on("keypress" , function(){
+    if(!gamestatus)
+    {
+        gamestatus=true;
+        nextSeq();
+    }
+});
