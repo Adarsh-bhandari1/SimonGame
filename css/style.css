@@ -34,3 +34,7 @@ body {
 .btn4 {
   background-color: rgb(182, 7, 213);
 }
+
+.gameover body{
+  background-color: red;
+}
