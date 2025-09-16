@@ -34,7 +34,19 @@ body {
 .btn4 {
   background-color: rgb(182, 7, 213);
 }
+body.flash {
+  animation: gameover 1s linear 3 alternate;
+}
+@keyframes gameover {
+  0% {
+    background-color: red;
+  }
 
-.gameover body{
-  background-color: red;
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: red;
+  }
 }
