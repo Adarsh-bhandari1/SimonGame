@@ -34,8 +34,8 @@ body {
 .btn4 {
   background-color: rgb(182, 7, 213);
 }
-body.flash {
-  animation: gameover 1s linear 3 alternate;
+.flash {
+  animation: gameover 1s linear 1 alternate;
 }
 @keyframes gameover {
   0% {
