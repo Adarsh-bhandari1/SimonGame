@@ -9,6 +9,7 @@ function nextSeq() {
   gamePattern.push(randomColor);
   level++;
   $("h1").text("Level " + level);
+  $("body").removeClass("flash");   //tomorrow push this on git hub 
   showPattern(randomColor);
   // btn1Audio.play();
 }
@@ -53,6 +54,7 @@ function gameOver() {
   // play audio
   // change css
   $("h1").text("Game Over, Press Any Key to Restart");
+  $("body").addClass("flash");
   gamestatus = false;
   userclkedPattern = [];
   gamePattern = [];
